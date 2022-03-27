@@ -1,7 +1,10 @@
 package models;
 
-public class Room extends Facility {
+import java.io.Serializable;
+
+public class Room extends Facility implements Serializable{
 	private String freeService;
+	private static final long serialVersionUID = -6500665823330706018L;
 	
 	public Room() {
 		// TODO Auto-generated constructor stub

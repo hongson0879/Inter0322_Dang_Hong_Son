@@ -1,8 +1,11 @@
 package models;
 
-public class House extends Facility{
+import java.io.Serializable;
+
+public class House extends Facility implements Serializable{
 	private int roomStandard;
 	public int floorsNumber;
+	private static final long serialVersionUID = -6500665823330706018L;
 	
 	public House() {
 		// TODO Auto-generated constructor stub

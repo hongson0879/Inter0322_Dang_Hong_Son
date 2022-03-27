@@ -1,12 +1,15 @@
 package models;
 
-public abstract class Facility {
+import java.io.Serializable;
+
+public abstract class Facility implements Serializable{
 	private String facilityID;
 	private String facilityName;
 	private int acreage;
 	private int rentalCost;
 	private int maxPeopleNumber;
 	private String rentalType;
+	private static final long serialVersionUID = -6500665823330706018L;
 	
 	public Facility() {
 

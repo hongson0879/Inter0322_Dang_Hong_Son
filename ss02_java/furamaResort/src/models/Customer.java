@@ -1,8 +1,11 @@
 package models;
 
-public class Customer extends Person{
+import java.io.Serializable;
+
+public class Customer extends Person implements Serializable{
 	private String type;
 	private String address;
+	private static final long serialVersionUID = -6500665823330706018L;
 	
 	public Customer() {
 		// TODO Auto-generated constructor stub

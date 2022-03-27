@@ -1,9 +1,12 @@
 package models;
 
-public class Villa extends Facility {
+import java.io.Serializable;
+
+public class Villa extends Facility implements Serializable{
 	private String roomStandard;
 	private int poolArea;
 	private int floorsNumber;
+	private static final long serialVersionUID = -6500665823330706018L;
 	
 	public Villa() {
 	}

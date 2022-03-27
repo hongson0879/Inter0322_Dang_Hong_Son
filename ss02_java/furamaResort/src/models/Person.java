@@ -1,6 +1,8 @@
 package models;
 
-public abstract class Person {
+import java.io.Serializable;
+
+public abstract class Person implements Serializable{
 	private int personalID;
 	private String name;
 	private String dOB;
@@ -8,6 +10,7 @@ public abstract class Person {
 	private String cMND;
 	private String phoneNumber;
 	private String email;
+	private static final long serialVersionUID = -6500665823330706018L;
 	
 	public Person() {
 		// TODO Auto-generated constructor stub

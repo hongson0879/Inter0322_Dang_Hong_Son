@@ -21,8 +21,12 @@ public class FuramaController {
 			System.out.println("5. Promotion Management");
 			System.out.println("6. Exit");
 			System.out.print("Please choose a menu: ");
-			int menuNumber = scan.nextInt();
-			scan.nextLine();
+			int menuNumber = 0;
+			try {
+				menuNumber = Integer.parseInt(scan.nextLine());
+			} catch (NumberFormatException e) {
+				System.out.println("You entered the wrong format, please enter it again: ");
+			}
 			switch (menuNumber) {
 				case 1: {
 					displayEmployeeMenu();
@@ -63,8 +67,12 @@ public class FuramaController {
 			System.out.println("3. Edit employee");
 			System.out.println("4. Return main menu");
 			System.out.print("Please choose a function: ");
-			int functionNumber = scan.nextInt();
-			scan.nextLine();
+			int functionNumber = 0;
+			try {
+				functionNumber = Integer.parseInt(scan.nextLine());
+			} catch (NumberFormatException e) {
+				System.out.println("You entered the wrong format, please enter it again: ");
+			}
 			switch (functionNumber) {
 			case 1: {
 				employeeService.display();
@@ -98,8 +106,12 @@ public class FuramaController {
 			System.out.println("3. Edit customers");
 			System.out.println("4. Return main menu");
 			System.out.print("Please choose a function: ");
-			int functionNumber = scan.nextInt();
-			scan.nextLine();
+			int functionNumber = 0;
+			try {
+				functionNumber = Integer.parseInt(scan.nextLine());
+			} catch (NumberFormatException e) {
+				System.out.println("You entered the wrong format, please enter it again: ");
+			}
 			switch (functionNumber) {
 			case 1: {
 				customerService.display();
@@ -133,8 +145,12 @@ public class FuramaController {
 			System.out.println("3. Display list facility maintenance");
 			System.out.println("4. Return main menu");
 			System.out.print("Please choose a function: ");
-			int functionNumber = scan.nextInt();
-			scan.nextLine();
+			int functionNumber = 0;
+			try {
+				functionNumber = Integer.parseInt(scan.nextLine());
+			} catch (NumberFormatException e) {
+				System.out.println("You entered the wrong format, please enter it again: ");
+			}
 			switch (functionNumber) {
 				case 1: {
 					facilityService.display();
@@ -201,8 +217,12 @@ public class FuramaController {
 			System.out.println("3. Add new room");
 			System.out.println("4. Return Facility Management menu");
 			System.out.print("Please choose a function: ");
-			int functionNumber = scan.nextInt();
-			scan.nextLine();
+			int functionNumber = 0;
+			try {
+				functionNumber = Integer.parseInt(scan.nextLine());
+			} catch (NumberFormatException e) {
+				System.out.println("You entered the wrong format, please enter it again: ");
+			}
 			switch (functionNumber) {
 				case 1:{
 					facilityService.addNewVilla();

@@ -1,9 +1,12 @@
 package models;
 
-public class Employee extends Person{
+import java.io.Serializable;
+
+public class Employee extends Person implements Serializable{
 	private String level;
 	private String position;
 	private int salary;
+	private static final long serialVersionUID = -6500665823330706018L;
 	
 	public Employee() {
 		// TODO Auto-generated constructor stub
