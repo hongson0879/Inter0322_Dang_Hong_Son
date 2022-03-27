@@ -5,7 +5,9 @@ import java.util.List;
 import java.util.Scanner;
 
 import models.Customer;
+import models.Employee;
 import services.CustomerService;
+import utils.ReadWriteFile;
 
 public class CustomerServiceImpl implements CustomerService {
 	private static List<Customer> customerList = new LinkedList<>();
@@ -13,6 +15,8 @@ public class CustomerServiceImpl implements CustomerService {
 	
 	@Override
 	public void display() {
+		customerList = (List<Customer>) ReadWriteFile.read("C:\\Users\\dangh\\Desktop\\Intern CodeGym\\Submit\\"
+				+ "Inter0322_Dang_Hong_Son\\ss02_java\\furamaResort\\src\\data\\customer.csv");
 		for(Customer customer : customerList) {
 			System.out.println(customer.toString());
 		}
@@ -42,6 +46,8 @@ public class CustomerServiceImpl implements CustomerService {
 										email, type, address);
 		customerList.add(customer);
 		System.out.println("Add customer successfully!");
+		ReadWriteFile.write(customerList, "C:\\Users\\dangh\\Desktop\\Intern CodeGym\\Submit\\"
+				+ "Inter0322_Dang_Hong_Son\\ss02_java\\furamaResort\\src\\data\\customer.csv");
 	}
 
 	@Override
