@@ -58,7 +58,6 @@ public class ReadWriteFile {
 			object = objectInputStream.readObject();
 			return object;
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return null;
