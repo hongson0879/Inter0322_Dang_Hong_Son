@@ -16,7 +16,7 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 100%;
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -129,6 +129,7 @@ html{
 .sidebar__link:hover{
     background-color: var(--white-color);
     color: #aaa;
+    text-decoration: none;
 }
 .addFacility{
     position: relative;
